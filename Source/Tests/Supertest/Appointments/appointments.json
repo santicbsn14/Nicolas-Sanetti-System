@@ -1,0 +1,43 @@
+[
+    {
+      "client_id": "64f59c295c4cbd001c7e4f01",
+      "hairdresser_id": "64f59c295c4cbd001c7e4f02",
+      "date_time": "2024-12-15T10:30:00Z",
+      "state": "Solicitado",
+      "service_id": "64f59c295c4cbd001c7e4f03",
+      "notes": ["Primera cita con este cliente", "Prefiere cortes clásicos"]
+    },
+    {
+      "client_id": "64f59c295c4cbd001c7e4f04",
+      "hairdresser_id": "64f59c295c4cbd001c7e4f05",
+      "date_time": "2024-12-16T14:00:00Z",
+      "state": "Confirmado",
+      "service_id": "64f59c295c4cbd001c7e4f06",
+      "notes": ["Cliente pidió tintura específica", "Es alérgico a productos con amoníaco"]
+    },
+    {
+      "client_id": "64f59c295c4cbd001c7e4f07",
+      "hairdresser_id": "64f59c295c4cbd001c7e4f08",
+      "date_time": "2024-12-17T09:00:00Z",
+      "state": "Pendiente",
+      "service_id": "64f59c295c4cbd001c7e4f09",
+      "notes": ["Necesita preparación previa", "Confirmar disponibilidad del producto"]
+    },
+    {
+      "client_id": "64f59c295c4cbd001c7e4f10",
+      "hairdresser_id": "64f59c295c4cbd001c7e4f11",
+      "date_time": "2024-12-18T16:45:00Z",
+      "state": "Completado",
+      "service_id": "64f59c295c4cbd001c7e4f12",
+      "notes": ["Cliente quedó satisfecho", "Agendó próxima cita en enero"]
+    },
+    {
+      "client_id": "64f59c295c4cbd001c7e4f13",
+      "hairdresser_id": "64f59c295c4cbd001c7e4f14",
+      "date_time": "2024-12-19T11:15:00Z",
+      "state": "Cancelado",
+      "service_id": "64f59c295c4cbd001c7e4f15",
+      "notes": ["Cliente canceló debido a enfermedad", "Reagendar para próxima semana"]
+    }
+  ]
+  

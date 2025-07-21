@@ -1,0 +1,25 @@
+[
+    {
+      "firstname": "Juan",
+      "lastname": "Pérez",
+      "email": "juan.perez@example.com",
+      "age": 30,
+      "dni": 12345678,
+      "phone": 1122334455,
+      "role": "65a1234567890abcdef12345",
+      "password": "hashedpassword123",
+      "fuid": "fuid-juan-123"
+    },
+    {
+      "firstname": "María",
+      "lastname": "Gómez",
+      "email": "maria.gomez@example.com",
+      "age": 28,
+      "dni": 87654321,
+      "phone": 2233445566,
+      "role": "65a9876543210abcdef67891",
+      "password": "hashedpassword456",
+      "fuid": "fuid-maria-456"
+    }
+  ]
+  
