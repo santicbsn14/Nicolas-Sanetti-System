@@ -1,11 +1,11 @@
 import { Criteria, IdMongo, Paginated } from "typesMongoose";
 import container from "../../container";
-import { NotificationTemplate } from "Source/Data/Models/notificationTemplateSchema.js";
-import { mailForConfirmAppointment } from "Source/Services/mailing.js";
+import { NotificationTemplate } from "../../Data/Models/notificationTemplateSchema.js";
+import { mailForConfirmAppointment } from "../../Services/mailing.js";
 import { CreateNotificationDto } from "typesRequestDtos";
 import idValidation from "../Validations/idValidation";
 import createNotificationValidation from "../Validations/CreatesValidation/createNotificationValidation";
-import { Appointment } from "Source/Data/Models/appointmentSchema";
+import { Appointment } from "../../Data/Models/appointmentSchema";
 import { renderTemplate } from "Source/Utils/renderTemplate";
 import { isValidObjectId } from "mongoose";
 

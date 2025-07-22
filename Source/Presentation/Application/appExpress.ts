@@ -17,7 +17,7 @@ import notificationTemplateRouter from '../Routes/notificationTemplateRouter.js'
 import dailyHourAvailabilityRouter from '../Routes/dailyHourARouter.js';
 import professionalTimeSlotsRouter from '../Routes/professionalTimeSlotsRouter.js';
 import errorHandler from '../Middlewares/errorHandler.js';
-import AppointmentManager from 'Source/Domain/Manager/appointmentManager.js';
+import AppointmentManager from '../../Domain/Manager/appointmentManager.js';
 
 
 class AppExpress {

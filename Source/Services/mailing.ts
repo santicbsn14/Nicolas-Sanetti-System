@@ -5,7 +5,7 @@ import fs from 'fs'
 // import Handlebars  from "handlebars";
 import {resolve} from 'path';
 import dayjs from 'dayjs';
-import 'dayjs/locale/es';
+import 'dayjs/locale/es.js';
 dayjs.locale('es');
 import { Appointment } from 'Source/Data/Models/appointmentSchema';
 
