@@ -47,7 +47,7 @@ class AppExpress {
         this.app.use(express.urlencoded({ extended: true }));
         this.app.use(cookieParser());
         this.app.use(cors({
-  origin: 'http://localhost:5173', // o '*', pero solo en dev
+  origin: ['http://localhost:5173', 'https://nicolas-sanetti-front.vercel.app/'], // o '*', pero solo en dev
   credentials: true,
   allowedHeaders: ['Content-Type', 'Authorization'] // si usás cookies o headers especiales
 }));
