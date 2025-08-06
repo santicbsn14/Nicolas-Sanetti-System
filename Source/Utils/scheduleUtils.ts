@@ -53,7 +53,11 @@ export function isAvailable(
         const profEndLocal = dayjs(profSlot.end_time).tz(systemTimezone)
         const reqSlotStart = dayjs(reqSlot.start_time).tz(systemTimezone)
         const reqSlotEnd = dayjs(reqSlot.end_time).tz(systemTimezone)
-        
+                // Agrega logs para verificar los valores
+        console.log("Professional Start:", profStartLocal);
+        console.log("Professional End:", profEndLocal);
+        console.log("Request Start:", reqSlotStart);
+        console.log("Request End:", reqSlotEnd);
         const isStartTimeValid = reqSlotStart.hour() > profStartLocal.hour() || 
                                  (reqSlotStart.hour() === profStartLocal.hour() && reqSlotStart.minute() >= profStartLocal.minute());
 
