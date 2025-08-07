@@ -14,7 +14,7 @@ export function isAvailable(
     professionalSchedule: DaySchedule[],
     clientRequest: Dayjs 
 ): boolean {
-    const systemTimezone = dayjs.tz.guess();
+    const systemTimezone = 'America/Buenos_Aires';
     
     function convertToSchedule(date: Date | Dayjs): DaySchedule {
         const dayjsDate = dayjs.isDayjs(date) ? date : dayjs(date);
