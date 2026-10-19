@@ -20,6 +20,6 @@
       "moduleDetection": "force"
     },
     "include": ["Source/**/*", "global.d.ts", "./api/*.ts"],
-    "exclude": ["node_modules"]
+    "exclude": ["node_modules", "Source/Tests/Supertest"]
   }
   

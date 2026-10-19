@@ -7,7 +7,7 @@
     "test": "c8 vitest run --coverage ",
     "test:watch": "vitest --watch",
     "build": "tsc && node add-js-extension.mjs ",
-    "start": "node --watch dist/index.js"
+    "start": "node dist/index.js"
   },
   "type": "module",
   "author": "Santiago Viale",

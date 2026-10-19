@@ -4,3 +4,5 @@ dist
 firebase.key.json
 
 .vercel
+coverage/
+*.log
