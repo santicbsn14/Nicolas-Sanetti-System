@@ -1,8 +1,18 @@
 import { NextFunction, Request, Response } from 'express';
 import customLogger from '../../Services/logger';
+import { HttpError } from '../../Utils/httpError';
 
 
 const errorHandler = (err: any, req: Request, res: Response, next: NextFunction) => {
+  if (err instanceof HttpError) {
+    customLogger.warn(`${err.status} - ${err.message}`, { route: req.path });
+    return res.status(err.status).json({ message: err.message });
+  }
+  // JSON mal formado en el body (express.json)
+  if (err?.type === 'entity.parse.failed') {
+    customLogger.warn(`400 JSON inválido - ${err.message}`, { route: req.path });
+    return res.status(400).json({ message: 'El body no es un JSON válido' });
+  }
   const similarErrorPattern = /ya tiene.*creado/;
   if (!(err instanceof Error)) {
     err = new Error('Unknown error');

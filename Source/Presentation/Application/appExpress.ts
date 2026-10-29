@@ -6,6 +6,10 @@ import customLogger from '../../Services/logger.js';
 dotenv.config();
 import DbFactory from '../../Data/Factories/dbFactory.js';
 import errorHandler from '../Middlewares/errorHandler.js';
+import requireAdmin from '../Middlewares/requireAdmin.js';
+import productoRouter from '../Routes/productoRouter.js';
+import trabajoRouter from '../Routes/trabajoRouter.js';
+import imagenRouter from '../Routes/imagenRouter.js';
 
 const DEFAULT_CORS_ORIGINS = 'http://localhost:5173,https://nicolas-sanetti-front.vercel.app';
 
@@ -81,6 +85,12 @@ class AppExpress {
         this.app.get('/api/health', (req, res) => {
             res.status(200).json({ status: 'ok' });
         });
+
+        // Panel /admin: todo lo de /api/admin exige token de Firebase con claim admin
+        this.app.use('/api/admin', requireAdmin);
+        this.app.use('/api/admin/productos', productoRouter);
+        this.app.use('/api/admin/trabajos', trabajoRouter);
+        this.app.use('/api/admin/imagenes', imagenRouter);
 
         this.app.use('/api', (req, res) => {
             res.status(404).json({ message: 'Not found' });
